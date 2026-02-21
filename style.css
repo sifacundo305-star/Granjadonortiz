@@ -1,0 +1,647 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar {
+    background: #111;
+    color: white;
+    font-size: 13px;
+    padding: 6px 0;
+    text-align: center;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    background: #ff4a2b;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ================= BOTÓN WHATSAPP FLOTANTE ================= */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* La imagen dentro del botón */
+.whatsapp-float img {
+    width: 32px;   /* ← tamaño de la imagen */
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Hover efecto premium */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.logo-icon {
+    font-size: 28px;
+}
+
+.brand h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.brand span {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+.cart-btn {
+    background: white;
+    color: #c40000;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    background: linear-gradient(135deg, #c40000, #ff3b3b);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.primary-btn {
+    background: #ffc107;
+    padding: 14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.secondary-btn {
+    background: white;
+    padding: 14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #c40000;
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* ================= CATEGORÍAS ================= */
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= PRODUCTOS ================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* ================= BENEFICIOS ================= */
+
+.benefits {
+    background: #111;
+    color: white;
+    padding: 60px 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.benefit {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ================= OFERTAS ================= */
+
+.offers {
+    background: #fff;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.offer-card {
+    background: #ffe5e5;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ================= TESTIMONIOS ================= */
+
+.testimonials {
+    background: #f9f9f9;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* ================= CONTACTO ================= */
+
+.contact {
+    text-align: center;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    padding: 15px 35px;
+    background: #25d366;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* ================= WHATSAPP FLOAT ================= */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .nav {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+}
+
+/* ================= TOPBAR NUEVA ================= */
+
+.topbar {
+    background: #000;
+    color: white;
+    padding: 10px 0;
+}
+
+.topbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Info izquierda */
+.top-info {
+    font-size: 14px;
+}
+
+/* Buscador */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 180px;
+}
+
+.search-box button {
+    background: #ff3c2f;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #e03226;
+}
+
+/* ================= ADMIN PANEL ================= */
+
+.admin-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 2000;
+}
+
+.admin-panel input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.admin-panel button {
+    width: 100%;
+    padding: 10px;
+    background: #ff3c2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn {
+    margin-top: 8px;
+    background: #111;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.edit-name,
+.edit-price {
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0;
+}
+
+.save-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.save-btn:hover {
+    background: #1e8449;
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: , sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ff4b2b, #ff1e1e);
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+#cartCount {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background: white;
+    color: #ff1e1e;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* TITULO */
+h2 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 26px;
+}
+
+/* GRID PRODUCTOS */
+#productsGrid {
+    padding: 0 20px 40px 20px;
+}
+
+/* CARD PRODUCTO */
+.product-card {
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* BOTONES */
+button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.add-btn {
+    background: #ff1e1e;
+    color: white;
+}
+
+.add-btn:hover {
+    background: #e60000;
+}
+
+.save-btn {
+    background: #2ecc71;
+    color: white;
+}
+
+.delete-btn {
+    background: #111;
+    color: white;
+    margin-left: 10px;
+}
+
+/* INPUTS ADMIN */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* FORM ADMIN */
+#adminAddForm {
+    padding: 20px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+#cartCount {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+
+    background: white;
+    color: #ff1e1e;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 18px;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+.search-bar button {
+    width: 70px;
+    border: none;
+    background: #ff1e1e;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+}
+
+.search-bar button img {
+    width: 22px;      /* 🔥 tamaño de la lupa */
+    height: 22px;
+    object-fit: contain;
+}
