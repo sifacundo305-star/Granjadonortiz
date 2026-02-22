@@ -22,8 +22,8 @@ body {
 /* ================= TOPBAR ================= */
 
 .topbar {
-    background: #111;
-    color: white;
+    background: #490300;
+    color: #c2c2c2;
     font-size: 13px;
     padding: 6px 0;
     text-align: center;
@@ -32,7 +32,7 @@ body {
 /* ================= HEADER ================= */
 
 .header {
-    background: #ff4a2b;
+    background: #b80000;
     padding: 15px 0;
     position: sticky;
     top: 0;
@@ -79,7 +79,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: white;
+    color: #ffd26a;
 }
 
 .logo-icon {
@@ -110,7 +110,7 @@ body {
 
 .cart-btn {
     background: white;
-    color: #c40000;
+    color: #ffdb4d;
     border: none;
     padding: 8px 18px;
     border-radius: 30px;
@@ -126,7 +126,7 @@ body {
 /* ================= HERO ================= */
 
 .hero {
-    background: linear-gradient(135deg, #c40000, #ff3b3b);
+    background: linear-gradient(135deg, #cc0000, #ac1d78);
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -149,15 +149,25 @@ body {
     gap: 15px;
 }
 
+.hero-buttons button:first-child {
+    background: #ffd26a;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
 .primary-btn {
-    background: #ffc107;
+    background: #ff2b4a;
     padding: 14px 30px;
     border-radius: 40px;
     text-decoration: none;
     font-weight: 600;
-    color: #000;
-}
-
+    color: white;
+}        
 .secondary-btn {
     background: white;
     padding: 14px 30px;
@@ -165,7 +175,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: #c40000;
-}
+}        
 
 /* ================= SECTIONS ================= */
 
@@ -251,11 +261,14 @@ body {
     font-weight: 600;
 }
 
+
+
 /* ================= TESTIMONIOS ================= */
 
 .testimonials {
     background: #f9f9f9;
 }
+
 
 .testimonial-card {
     background: white;
@@ -643,5 +656,9 @@ input {
 .search-bar button img {
     width: 22px;      /* 🔥 tamaño de la lupa */
     height: 22px;
-    object-fit: contain;
+    object-fit: contai
+
+    
 }
+
+
