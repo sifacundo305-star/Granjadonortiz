@@ -1,194 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="icon" type="image/png" href="logo.png?v=2">
-    <meta charset="UTF-8">
-    <title>Granja Don Ortiz | Pollo, Carne y Huevos Frescos en Tacuarembó, Uruguay</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Compra pollo, carne, huevos y hielo al mejor precio en Uruguay. Calidad fresca todos los días en Granja Don Ortiz.">
-    <meta name="keywords" content="pollo uruguay, huevos uruguay, granja, carne fresca, hielo uruguay">
-<meta name="google-site-verification" content="YD7XeKVVErIRrnnEAwI32G5DqNw0wWqXdT2hNkG1pcc" />
-<meta name="author" content="Granja Don Ortiz">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Granja Don Ortiz | En desarrollo</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#1f3d1f,#2e7d32);
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  text-align:center;
+}
+
+.container{
+  padding:40px;
+  border-radius:20px;
+  background:rgba(0,0,0,0.3);
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 40px rgba(0,0,0,0.4);
+}
+
+h1{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+p{
+  opacity:0.9;
+  font-size:1.1rem;
+}
+
+.dot{
+  animation:blink 1.5s infinite;
+}
+
+@keyframes blink{
+  0%{opacity:0.2;}
+  50%{opacity:1;}
+  100%{opacity:0.2;}
+}
+</style>
 </head>
 <body>
 
-<!-- ================= TOP BAR ================= -->
-<div class="topbar">
-    <div class="container topbar-flex">
-
-        <div class="top-info">
-            
-        </div>
-
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Buscar productos...">
-            <button id="searchBtn"><img src="lupita.png" alt=""width="30px" height="30px"></button>
-        </div>
-
-    </div>
+<div class="container">
+  <h1>Granja Don Ortiz</h1>
+  <p>Sitio web en desarrollo<span class="dot">...</span></p>
+  <p>Próximamente más información.</p>
 </div>
-<!-- ================= HEADER ================= -->
-<header class="header">
-    <div class="container header-flex">
-
-        <div class="brand">
-            <span class="logo-icon"></span>
-            <div>
-                <h1>Granja Don Ortiz</h1>
-                <span>Tu pollo de confianza</span>
-            </div>
-        </div>
-
-        <nav class="nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#categorias">Categorías</a>
-            <a href="#productos">Productos</a>
-            <a href="#ofertas">Ofertas</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-
-        <button id="cartBtn" class="cart-btn">
-            + <span id="cartCount">0</span>
-        </button>
-
-    </div>
-</header>
-
-<!-- ================= HERO ================= -->
-<section id="inicio" class="hero">
-    <div class="hero-content">
-        <h2>Calidad fresca todos los días</h2>
-        <p>carne, huevos y hielo al mejor precio en Uruguay</p>
-        <div class="hero-buttons">
-            <a href="#productos" class="primary-btn">Ver Productos</a>
-            <a href="#contacto" class="secondary-btn">Hacer Pedido</a>
-        </div>
-    </div>
-</section>
-
-<!-- ================= CATEGORÍAS ================= -->
-
-<!-- ================= PRODUCTOS ================= -->
-<section id="productos" class="section">
-    <div class="container">
-        <h2 class="section-title">Productos Destacados</h2>
-        <div id="adminAddForm" style="display:none;">
-    <input type="text" id="newProductName" placeholder="Nombre del producto">
-    <input type="number" id="newProductPrice" placeholder="Precio">
-    <button id="createProductBtn">Agregar Producto</button>
-</div>
-        <div id="productsGrid" class="grid"></div>
-    </div>
-</section>
-
-<!-- ================= BENEFICIOS ================= -->
-<section class="benefits">
-    <div class="container benefits-grid">
-        <div class="benefit">
-            🚚 Entrega rápida
-        </div>
-        <div class="benefit">
-            🧼 Productos frescos
-        </div>
-        <div class="benefit">
-            💰 Mejores precios
-        </div>
-        <div class="benefit">
-            🤝 Atención personalizada
-        </div>
-    </div>
-</section>
-
-<!-- ================= OFERTAS ================= -->
-<section id="ofertas" class="section offers">
-    <div class="container">
-        <h2 class="section-title">Ofertas Especiales</h2>
-        <div class="offers-grid">
-            <div class="offer-card">
-                🔥 Combo Familiar
-                <p>Pollo entero + 1 docena huevos</p>
-            </div>
-            <div class="offer-card">
-                🔥 Pack Parrillero
-                <p>Muslos + Carne Vacuna</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================= TESTIMONIOS ================= -->
-<section class="section testimonials">
-    <div class="container">
-        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-        <div class="testimonial-card">
-            ⭐⭐⭐⭐⭐  
-            "Siempre compro acá, excelente calidad y atención."
-        </div>
-        <div class="testimonial-card">
-            ⭐⭐⭐⭐⭐  
-            "Los mejores precios del barrio."
-        </div>
-    </div>
-</section>
-
-<!-- ================= CONTACTO ================= -->
-<section id="contacto" class="section contact">
-    <div class="container">
-        <h2 class="section-title">Contacto</h2>
-        <p>Hacé tu pedido directamente por WhatsApp</p>
-        <button id="whatsappBtn" class="checkout-btn">
-            📲 Pedir por WhatsApp
-        </button>
-    </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-    <div class="container footer-grid">
-        <div>
-            <h4>Pollería Don Ortiz</h4>
-            <p>Tu pollo de confianza</p>
-        </div>
-
-        <div>
-            <h4>Horario</h4>
-            <p>Lunes a Domingo</p>
-            <p>08:00 - 20:00</p>
-        </div>
-
-        <div>
-            <h4>Ubicación</h4>
-            <p>Uruguay</p>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        © 2026 Pollería Don Ortiz - Todos los derechos reservados
-    </div>
-    <!-- ================= ADMIN PANEL ================= -->
-
-<div id="adminPanel" class="admin-panel">
-    <h3>Panel Admin</h3>
-    <div id="adminAddForm" style="display:none;">
-    <button id="exitAdminBtn" class="exit-admin">Salir del modo admin</button>
-
-    <input type="text" id="newProductName" placeholder="Nombre del producto">
-    <input type="number" id="newProductPrice" placeholder="Precio">
-    <button id="createProductBtn">Agregar Producto</button>
-</div>
-    <input type="text" id="adminName" placeholder="Nombre del producto">
-    <input type="number" id="adminPrice" placeholder="Precio">
-    <button id="addProductBtn">Agregar Producto</button>
-</div>
-</footer>
-
-<!-- BOTÓN WHATSAPP FLOTANTE -->
-<a href="#" class="whatsapp-float"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/3840px-WhatsApp.svg.png" alt=""></a>
-
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="script.js"></script>
 
 </body>
 </html>
